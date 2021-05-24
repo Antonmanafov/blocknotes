@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Antonmanafov/blocknotes/issues"
   },
-  "homepage": "https://github.com/Antonmanafov/blocknotes#readme"
+  "homepage": "https://github.com/Antonmanafov/blocknotes#readme",
+  "engines": {
+    "node": "14.x"
+  }
 }
