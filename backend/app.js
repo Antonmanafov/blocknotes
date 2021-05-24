@@ -47,6 +47,10 @@ app.use(session({
 }
 }))
 
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve('../client/build/index.html'))
+})
+
 app.listen(PORT, () => {
   mongoose.connect(process.env.DB, {
     useNewUrlParser: true,
