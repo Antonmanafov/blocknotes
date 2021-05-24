@@ -3,7 +3,9 @@ import mongoose from 'mongoose'
 import session from 'express-session'
 import sessionFileStore from 'session-file-store';
 import config from 'config'
-const PORT = process.env.PORT || config.get("serverPort")
+const PORT = process.env.PORT || 5001
+import morgan from 'morgan';
+import path from 'path'
 import dotenv from "dotenv";
 dotenv.config()
 
@@ -22,11 +24,12 @@ import registrationRouter from './routes/registration.js'
 import logoutRouter from './routes/logout.js'
 import loginRouter from './routes/login.js'
 import updateUserRouter from './routes/updateUser.js'
-import morgan from 'morgan';
 
 app.use(morgan())
 
 const FileStore = sessionFileStore(session);
+
+app.use(express.static(path.resolve('../frontend/build')))
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

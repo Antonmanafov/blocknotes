@@ -1,0 +1,21 @@
+{
+  "name": "Blocknotes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "start": "cd backend && npm install && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antonmanafov/blocknotes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Antonmanafov/blocknotes/issues"
+  },
+  "homepage": "https://github.com/Antonmanafov/blocknotes#readme"
+}
