@@ -6,6 +6,7 @@
 /.pnp
 .pnp.js
 bower_components
+.env
 
 
 # testing
