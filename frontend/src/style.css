@@ -1,0 +1,716 @@
+.addblocknote {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+body {
+background-color: rgb(255, 255, 255);
+margin: 0;
+padding: 0;
+min-height: 100vh;
+}
+  
+
+.addblocknote input {
+  width: 370px;
+  height: 20px;
+  border: 0;
+  padding: 10px;
+  padding-left: 20px;
+  box-shadow: 0px 0px 4px black;
+  border-radius: 5px;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.addblocknote textarea {
+  min-height: 50px;
+  width: 360px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  border: 0;
+  box-shadow: 0px 0px 4px black;
+  border-radius: 5px;
+  outline: none;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 0;
+}
+
+.addblocknote button {
+  height: 40px;
+  width: 100%;
+  background-color: tomato;
+  border: 0;
+  color: white;
+  font-weight: 900;
+  border-radius: 5px;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 1;
+  
+}
+
+.blocknotesPage {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blocknotesList {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 70px
+
+}
+
+.oneFullCard {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 4px black;
+}
+
+.BlocknoteCard {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px ;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 300px;
+  height: 400px;
+  justify-content: center;
+  background-color: white;
+}
+
+.BlocknoteCard div {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.cardName {
+  height: 30px;
+  align-items: center;
+  font-size: 16pt;
+  font-weight: 900;
+}
+
+.cardAbout {
+  height: 80px;
+  align-items: center;
+  text-align: center;
+}
+
+.cardimg {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.blocknoteCardButton {
+  height: 40px;
+  width: 155px;
+  border: 0px;
+  outline: none;
+  border: 0px;
+  z-index: 1;
+  background-color: tomato;
+  color: white;
+  font-weight: 900;
+  font-size: 10pt;
+}
+
+.blocknoteCardButton:first-of-type{
+  border-bottom-left-radius: 10px;
+  margin-right: 5px;
+}
+
+.blocknoteCardButton:first-of-type:hover{
+  position: relative;
+  top: 10px;
+  right: 10px;
+  }
+
+.blocknoteCardButton:last-of-type {
+  border-bottom-right-radius: 10px;
+  margin-left: 5px;
+}
+
+.blocknoteCardButton:last-of-type:hover{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  }
+
+.blocknoteCardButton:active {
+  background-color: tomato;
+  color: white;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  font-size: 12pt;
+}
+
+.editForm input {
+  height: 30px;
+}
+
+.editForm input:last-of-type {
+  height: 50px;
+}
+
+.editForm button {
+  height: 30px;
+}
+
+.cardBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  padding: 10px;
+  width: 350px;
+  min-height: 250px;
+  box-shadow: 1px 1px 3px black;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.cardBlock textarea {
+  width: 330px;
+  resize: none;
+  height: 200px;
+  word-wrap: break-word;
+  white-space: normal;
+  border: 0;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+}
+
+.cardBlock input {
+  height: 40px;
+  width: 348px;
+  border: 0;
+  border-bottom: 1px solid black ;
+  text-align: center;
+  margin: 10px;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+}
+
+.deleteCardButton {
+  width: 150px;
+  margin-top: 10px;
+  height: 40px;
+  background-color: white;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 3px 3px 1px tomato;
+  outline: none;
+}
+
+.deleteCardButton:active {
+    background-color: tomato;
+    color: white;
+}
+
+.bodyOfList {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center ;
+}
+
+.forButton {
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none; 
+  box-shadow: none;
+}
+
+.buttonsBlock {
+  border-top: 1px solid black;
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 10px;
+}
+
+.tagAddButton {
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  border-radius: 50%;
+  border: 0;
+  color: white;
+  font-size: 14pt;
+  font-weight: 900;
+}
+
+.tagsBlock {
+  border-top: 1px solid black;
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  padding: 5px;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.tag {
+  padding: 5px;
+  box-shadow: 1px 1px 3px black;
+  border-radius: 20px;
+  margin-left: 7px;
+  margin-right: 7px;
+  display: flex;
+  flex-direction: row;
+}
+
+.tagButton {
+  height: 15px;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  position: relative;
+  bottom: 5px;
+  left: 15px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  font-weight: 900;
+}
+
+
+.textCardsPage {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  flex-direction: column;
+}
+
+.textCard {
+  width: 300px;
+  height: 400px;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+  box-shadow: 1px 1px 4px black;
+}
+
+.textCardHead {
+  height: 30px;
+  margin-bottom: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  background-color: white;
+  box-shadow: 0px 1px 2px black;
+}
+
+.textCardBody {
+  height: 100%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  
+
+}
+
+.cardsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.findInp {
+  width: 400px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px black inset;
+  padding: 5px;
+  text-align: center;
+  font-size: 11pt;
+  margin-bottom: 50px;
+}
+
+.navButton {
+  border: 0;
+  /* border-radius: 10px; */
+  /* background-color: rgba(0, 0, 0, 0.576); */
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.navButton:hover {
+  font-size: 18pt;
+}
+
+.navButton:active {
+  background-color: rgba(255, 255, 255, 0.802);
+  color: black;
+  /* position: relative;
+  left: 40px; */
+} 
+
+.navButton:focus {
+  border: 2px solid white;
+}
+
+.middleOfScreen {
+  width: 80%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  flex-direction: column;
+}
+
+#regform {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#regform input {
+  margin-bottom: 11px;
+  height: 40px;
+  text-align: center;
+  width: 100%;
+  border: 0;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.604);
+  border-radius: 5px;
+  font-size: 12pt;
+}
+
+#regform input:focus {
+  outline: none;
+}
+#regform button {
+  width: 50%;
+  height: 50px;
+  border: 0;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.618);
+  outline: none;
+  font-size: 14pt;
+  border-radius: 5px;
+}
+
+#regform button:active{
+  background-color: tomato;
+  color: white;
+}
+
+.welcomNav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  color: white;
+  font-weight: 900;
+  font-size: 12pt;
+  
+}
+
+.welcomNavUser {
+  padding-bottom: 50px;
+}
+
+.welcomNav:last-of-type {
+  font-size: 20pt;
+  margin-bottom: 40px;
+}
+
+.forCardsButton {
+  height: 40px;
+  margin: 10px;
+  border: 0px;
+  outline: none;
+  border: 0px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px black;
+  width: 280px;
+}
+
+.addBut:active {
+  color: white;
+  font-weight: 900;
+  box-shadow: 0px 3px 3px rgb(0, 0, 0);
+}
+
+.myCabinetPage {
+  width: 75%;
+  padding: 20px;
+  color: white;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(197, 197, 197, 0.357);
+  padding: 30px;
+}
+
+.imgBlock {
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgBlock button {
+  height: 50px;
+  margin-top: 10px;
+  border: none;
+  width: 100%;
+  box-shadow: 2px 2px 4px black;
+  background-color: white;
+  outline: none;
+}
+
+/* .imgBlock button:hover {
+  border: 2px solid black;
+} */
+
+.imgBlock button:active {
+  background-color: tomato;
+  color: white;
+}
+
+.formForChange {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  align-items: flex-end;
+  width: 400px;
+  padding: 20px;
+  margin-left: 50px;
+  margin-bottom: 15px;
+  font-size: 14pt;
+}
+
+.formForChange input {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  word-spacing: normal;
+  word-wrap: break-word;
+  white-space: normal;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border: none;
+  font-size: 11pt;
+  outline: none;
+  box-shadow: 2px 2px 3px black;
+}
+
+.formForChange textarea {
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  word-wrap: break-word;
+  white-space: normal;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border: none;
+  font-size: 11pt;
+  outline: none;
+  box-shadow: 2px 2px 3px black;  resize: none;
+}
+
+
+.formForChange button {
+  height: 40px;
+  border: none;
+  width: 200px;
+  box-shadow: 2px 2px 3px black;
+  background-color: white;
+  outline: none;
+  margin-bottom: 10px;
+  font-size: 12pt;
+
+}
+
+/* .formForChange button:hover {
+  border: 2px solid black;
+} */
+
+.formForChange button:active {
+  background-color: tomato;
+  color: white;
+}
+
+
+.staticInf {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 130px;
+  padding: 20px;
+  width: 100%;
+  margin-left: 50px;
+  align-items: flex-end;
+}
+
+.dinamicInf {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+
+.dinamicInf button {
+  width: 250px;
+  height: 30px;
+  margin-top: 10px;
+  border: none;
+  box-shadow: 2px 2px 4px black;
+  background-color: white;
+  outline: none;
+}
+
+/* .dinamicInf button:hover {
+  border: 2px solid black;
+} */
+
+.dinamicInf button:active {
+  background-color: tomato;
+  color: white; 
+}
+
+.persInform {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.loadmypage {
+  justify-content: center;  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.forloadincabinet {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.navigationBar {
+  background-color: tomato;
+  min-height: 100vh;
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 200px;
+  flex-direction: column;
+
+}
+
+.blocknoteCardButtonsBlock {
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+}
+
+.addButtonRed {
+  background-color: tomato;
+  color: white;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  font-size: 48pt;
+  font-weight: 900;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addButtonRed:hover {
+  background-color: rgb(255, 255, 255);
+  color: tomato;
+  border-radius: 50%;
+}
+
+.addButtonRed:active {
+background-color: teal;
+color: white;
+}
+
+.mainpage {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  margin-bottom: 0px;
+}
