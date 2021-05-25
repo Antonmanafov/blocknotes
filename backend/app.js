@@ -47,7 +47,7 @@ app.use(session({
 }))
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join('../frontend', 'build', 'index.html'));
+  res.sendFile(path.resolve('../frontend/build/index.html'));
   });
  
 
