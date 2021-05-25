@@ -2,7 +2,6 @@ import express from 'express'
 import mongoose from 'mongoose'
 import session from 'express-session'
 import sessionFileStore from 'session-file-store';
-import config from 'config'
 const PORT = process.env.PORT || 5001
 import morgan from 'morgan';
 import path from 'path'
@@ -47,8 +46,8 @@ app.use(session({
 }
 }))
 
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+app.get('*', (req, res) => {
+  res.sendFile(path.join('../frontend', 'build', 'index.html'));
   });
  
 
