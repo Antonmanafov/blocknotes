@@ -37,7 +37,7 @@ app.use(session({
   secret: 'ddoijsadiosadjoiadoisafjqwdpoqwdpoiqwdpoiqw',
   store: new FileStore({
     // Шифрование сессии
-    secret: 'ddoijsadiosadjoiadoisafjqwdpoqwdpoiqwdpoiqw',
+    secret: 'ddoijsadiosadjoiadoisafjqwdpoqwdpoiawdpoiqw',
   }),
   key: 'user_sid',
   cookie: {
